@@ -1,9 +1,25 @@
 body {
   text-align: center;
-  background-image: linear-gradient(to bottom right, pink, cyan);
+  background-image: linear-gradient(to bottom right, lightblue, lightpink);
   background-attachment: fixed;
   background-repeat: no-repeat;
   padding: 5%;
+  overflow-x: hidden;
+}
+
+p, li{
+  font-size: 1.25rem;
+}
+
+.background-video{
+  position: absolute;
+  opacity: 25%;
+  z-index: -999;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  -webkit-mask-image:-webkit-gradient(linear, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
 }
 
 .navigation-menu{
@@ -16,7 +32,7 @@ ul{
 }
 
 li{
-  margin-left: 2vw;
+  margin-left: 2.5vw;
 }
 
 li:hover{
@@ -24,7 +40,15 @@ li:hover{
   cursor: pointer;
 }
 
+.link{
+  text-decoration: none !important;
+  color: black;
+}
+
 .main-title{
-  opacity: 0.75;
-  font-size: xx-large;
+  opacity: 90%;
+}
+
+h1{
+  font-size: 7.5vh !important;
 }
